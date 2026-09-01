@@ -1,0 +1,377 @@
+.destination-card{
+
+background:white;
+
+border-radius:28px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+transition:0.3s;
+
+width:100%;
+
+}
+
+
+.destination-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+/* Image */
+
+.destination-card img{
+
+width:100%;
+
+height:230px;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+
+
+/* Content */
+
+.destination-info{
+
+padding:22px;
+
+}
+
+
+
+.destination-info h3{
+
+font-size:26px;
+
+font-weight:800;
+
+color:#102a43;
+
+margin:12px 0;
+
+}
+
+
+
+.destination-info p{
+
+color:#64748b;
+
+}
+
+
+
+/* badges */
+
+.destination-meta{
+
+display:flex;
+
+gap:12px;
+
+}
+
+
+
+.badge{
+
+background:#e8f7f5;
+
+padding:8px 16px;
+
+border-radius:30px;
+
+font-size:14px;
+
+}
+
+
+
+/* Button */
+
+.details-btn{
+
+display:inline-block;
+
+margin-top:18px;
+
+color:#16b8aa;
+
+font-weight:700;
+
+text-decoration:none;
+
+}
+.details-page{
+  padding-bottom: 80px;
+}
+
+.not-found{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.not-found a{
+  color: #0d9488;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.details-hero{
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.details-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details-overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 50px 8%;
+  color: white;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.1) 60%
+  );
+}
+
+.details-overlay h1{
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.info span{
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(6px);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.details-info{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 8% 0;
+}
+
+.details-info h2{
+  font-size: 28px;
+  color: #102a43;
+  margin-bottom: 14px;
+}
+
+.details-info p{
+  color: #486581;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.activities{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0 10px;
+}
+
+.activity{
+  background: #edf7f6;
+  color: #0d9488;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.plan-btn{
+  display: flex;
+  align-items: center;
+  padding: 14px 28px;
+  border-radius: 12px;
+  border: 1px solid #0d9488;
+  color: #0d9488;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.plan-btn:hover{
+  background: #0d9488;
+  color: white;
+}
+.booking-box{
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #f8fafc;
+}
+
+.booking-box h2{
+  margin-bottom: 16px;
+}
+
+.booking-fields{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.booking-fields .field{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field.full-width{
+  width: 100%;
+  margin-top: 18px;
+}
+
+.booking-fields label,
+.field label{
+  font-size: 14px;
+  color: #486581;
+  font-weight: 600;
+}
+
+.booking-box input,
+.booking-box select{
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 15px;
+  background: white;
+}
+
+.booking-box select{
+  width: 100%;
+  cursor: pointer;
+}
+
+.booking-box input#nights{
+  width: 100px;
+}
+
+.hotel-amenities{
+  margin-top: 6px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.checkbox-label{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #334155;
+}
+
+.checkbox-label input{
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.stay-dates{
+  margin-top: 20px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.price-breakdown{
+  margin-top: 12px;
+  background: white;
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.price-breakdown p{
+  margin: 4px 0;
+  color: #486581;
+  font-size: 14px;
+}
+
+.total-price{
+  font-size: 1.1rem;
+  margin: 8px 0 0 !important;
+  color: #102a43 !important;
+}
+
+.login-hint{
+  color: #b45309;
+  background: #fffbeb;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.login-hint a{
+  color: #0d9488;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.book-btn:disabled{
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.details-actions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.book-btn{
+  background: #0d9488;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.book-btn:hover{
+  background: #0f766e;
+}
+
+.booking-confirmation{
+  margin-top: 12px;
+  color: #0d9488;
+  font-weight: 600;
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
+
+:root {
+  /* Ink (text) */
+  --ink: #10243B;
+  --ink-soft: #55697A;
+
+  /* Teal (single source of truth — stop scattering variants) */
+  --teal: #16A39A;
+  --teal-deep: #0C7A72;
+  --teal-tint: #EAF5F3;
+
+  /* Surfaces */
+  --surface: #FFFFFF;
+  --surface-alt: #F2F5F4;
+  --line: #E3E8E6;
+
+  /* Radius scale */
+  --radius-s: 12px;
+  --radius-m: 20px;
+  --radius-l: 28px;
+
+  /* Shadow scale — used sparingly, mostly on hover */
+  --shadow-soft: 0 10px 30px rgba(16, 36, 59, 0.06);
+  --shadow-hover: 0 18px 40px rgba(16, 36, 59, 0.12);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background: var(--surface);
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+h1, h2, h3{
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  font-family: inherit;
+  cursor: pointer;
+}

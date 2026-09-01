@@ -1,0 +1,251 @@
+.trip-page{
+
+min-height:100vh;
+padding:120px 10%;
+background:#f8fafc;
+
+}
+
+
+.trip-container{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:80px;
+
+}
+
+
+
+.trip-content{
+
+flex:1;
+
+}
+
+
+
+.trip-page h1{
+
+font-size:56px;
+font-weight:800;
+color:#102a43;
+
+}
+
+
+
+.trip-page p{
+
+font-size:20px;
+color:#64748b;
+
+}
+
+
+
+.trip-form{
+
+margin-top:40px;
+width:480px;
+display:flex;
+flex-direction:column;
+gap:18px;
+
+}
+
+
+
+.trip-form input,
+.trip-form select{
+
+height:60px;
+border-radius:18px;
+border:1px solid #dbe4ea;
+padding:0 20px;
+font-size:16px;
+
+}
+
+
+
+.trip-form button{
+
+height:60px;
+border:none;
+border-radius:30px;
+
+background:#14b8a6;
+color:white;
+
+font-size:18px;
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+
+
+.trip-image{
+
+position:relative;
+width:450px;
+height:550px;
+
+border-radius:35px;
+overflow:hidden;
+
+}
+
+
+
+.trip-image img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+
+
+.image-overlay{
+
+position:absolute;
+bottom:0;
+left:0;
+
+padding:35px;
+
+color:white;
+
+background:linear-gradient(
+transparent,
+rgba(0,0,0,.7)
+);
+
+width:100%;
+
+}
+
+
+
+.image-overlay h2{
+
+font-size:32px;
+
+}
+
+
+
+.itinerary{
+
+margin-top:50px;
+
+background:white;
+
+padding:35px;
+
+border-radius:30px;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.08);
+
+}
+.outdated-hint{
+  background: #fffbeb;
+  color: #b45309;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.save-plan-btn{
+  margin-top: 20px;
+  background: #0d9488;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.save-plan-btn:hover{
+  background: #0f766e;
+  transform: translateY(-2px);
+}
+
+.saved-plans-section{
+  max-width: 1100px;
+  margin: 60px auto 0;
+  padding: 0 8%;
+}
+
+.saved-plans-section h2{
+  font-size: 28px;
+  color: #102a43;
+  margin-bottom: 20px;
+}
+
+.saved-plans-list{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.saved-plan-card{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.saved-plan-card img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.saved-plan-info{
+  flex: 1;
+}
+
+.saved-plan-info h3{
+  margin: 0 0 4px;
+  color: #102a43;
+}
+
+.saved-plan-info p{
+  color: #64748b;
+  font-size: 14px;
+}
+
+.saved-plan-actions{
+  display: flex;
+  gap: 8px;
+}
+
+.saved-plan-actions button{
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #0d9488;
+  background: white;
+  color: #0d9488;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.saved-plan-actions .delete-btn{
+  border-color: #dc2626;
+  color: #dc2626;
+}

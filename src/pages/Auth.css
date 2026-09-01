@@ -1,0 +1,159 @@
+.auth-page{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:
+linear-gradient(
+rgba(8,30,55,.45),
+rgba(8,30,55,.45)
+),
+url("/images/dahab.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+
+/* card */
+
+.auth-card{
+
+width:420px;
+
+padding:45px;
+
+background:rgba(255,255,255,.88);
+
+backdrop-filter:blur(15px);
+
+border-radius:30px;
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+/* title */
+
+.auth-card h1{
+
+font-size:40px;
+
+font-weight:800;
+
+color:#102a43;
+
+margin-bottom:8px;
+
+}
+
+
+/* subtitle */
+
+.auth-card p{
+
+color:#64748b;
+
+font-size:17px;
+
+margin-bottom:25px;
+
+}
+
+
+/* inputs */
+
+.auth-card input{
+
+width:100%;
+
+height:55px;
+
+border-radius:15px;
+
+border:1px solid #ddd;
+
+padding:0 20px;
+
+font-size:16px;
+
+margin-bottom:18px;
+
+outline:none;
+
+}
+
+
+.auth-card input:focus{
+
+border-color:#16b8aa;
+
+}
+
+
+/* button */
+
+.auth-card button{
+
+width:100%;
+
+height:55px;
+
+border:none;
+
+border-radius:30px;
+
+background:#16b8aa;
+
+color:white;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+.auth-card button:hover{
+
+background:#0e9d94;
+
+transform:translateY(-2px);
+
+}
+
+
+
+/* links */
+
+.auth-link{
+
+text-align:center;
+
+margin-top:25px;
+
+}
+
+
+.auth-link a{
+
+color:#16b8aa;
+
+font-weight:600;
+
+text-decoration:none;
+
+}

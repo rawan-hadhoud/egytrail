@@ -1,0 +1,49 @@
+.vibe-card{
+  height: 380px;
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.vibe-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vibe-card::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 40%, rgba(0,0,0,0.6));
+}
+
+.vibe-overlay{
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+  z-index: 2;
+  color: white;
+}
+
+.vibe-overlay h3{
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 6px;
+}
+
+.vibe-overlay p{
+  font-size: 15px;
+  margin: 0;
+  color: rgba(255,255,255,0.85);
+}
+
+.vibe-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}

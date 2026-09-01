@@ -1,0 +1,48 @@
+.cta{
+  margin: 90px 8%;
+  height: 380px;
+  border-radius: var(--radius-l);
+  background-image:
+  linear-gradient(rgba(16,36,59,.55), rgba(16,36,59,.55)),
+  url("/images/cta.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta-overlay{
+  color: white;
+  max-width: 560px;
+  padding: 0 20px;
+}
+
+.cta h2{
+  font-size: clamp(28px, 4vw, 40px);
+  color: white;
+  margin-bottom: 16px;
+}
+
+.cta p{
+  font-size: 17px;
+  color: rgba(255,255,255,.85);
+  margin-bottom: 28px;
+}
+
+.cta button{
+  background: var(--teal);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: var(--radius-s);
+  font-size: 16px;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.cta button:hover{
+  background: var(--teal-deep);
+  transform: translateY(-2px);
+}

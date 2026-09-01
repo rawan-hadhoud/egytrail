@@ -1,0 +1,105 @@
+.destination-card{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  transition: .3s;
+}
+
+.destination-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-image{
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.destination-card:hover img{
+  transform: scale(1.05);
+}
+
+.rating-badge{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: white;
+  padding: 6px 13px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.favorite{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.favorite:hover{
+  transform: scale(1.1);
+}
+
+.favorite.is-active{
+  color: #e11d48;
+}
+
+.card-content{
+  padding: 22px;
+}
+
+.location{
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-content h2{
+  font-size: 22px;
+  color: var(--ink);
+  margin: 10px 0 14px;
+}
+
+.card-info{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.card-info span{
+  background: var(--surface-alt);
+  padding: 6px 13px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.price-tag{
+  background: var(--teal-tint) !important;
+  color: var(--teal-deep) !important;
+  font-weight: 600;
+}
+
+.details-btn{
+  color: var(--teal);
+  font-weight: 600;
+  font-size: 15px;
+}

@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "name": "Rawan Ahmed",
+      "email": "rawanhadhoud1235@gmail.com",
+      "password": "rawan'spass",
+      "id": "FT79WBL08G4"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "1",
+      "name": "Dahab",
+      "governorate": "South Sinai",
+      "category": "Beach",
+      "rating": 4.8,
+      "price": "Medium",
+      "duration": "3 Days",
+      "bestTime": "October - April",
+      "image": "/images/dahab.jpg",
+      "description": "A magical coastal city famous for diving and relaxing beaches.",
+      "activities": [
+        "Diving in Blue Hole",
+        "Desert Safari",
+        "Bedouin Dinner",
+        "Relax at Lagoon"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Luxor",
+      "governorate": "Luxor",
+      "category": "History",
+      "rating": 4.9,
+      "price": "Medium",
+      "duration": "3 Days",
+      "bestTime": "Winter",
+      "image": "/images/luxor.jpg",
+      "description": "Ancient temples and unforgettable historical experiences.",
+      "activities": [
+        "Karnak Temple",
+        "Valley of Kings"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Siwa Oasis",
+      "governorate": "Matrouh",
+      "category": "Nature",
+      "rating": 4.7,
+      "price": "Low",
+      "duration": "4 Days",
+      "bestTime": "Winter",
+      "image": "/images/siwa.jpg",
+      "description": "A peaceful oasis with desert landscapes and unique experiences.",
+      "activities": [
+        "Desert Safari",
+        "Salt Lakes",
+        "Sandboarding"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Sharm El Sheikh",
+      "governorate": "South Sinai",
+      "category": "Beach",
+      "rating": 4.9,
+      "price": "High",
+      "duration": "5 Days",
+      "bestTime": "All Year",
+      "image": "/images/sharm.jpg",
+      "description": "A world famous destination for beaches and diving.",
+      "activities": [
+        "Diving",
+        "Boat Trips",
+        "Nightlife"
+      ]
+    }
+  ],
+  "trips": [
+    {
+      "destinationId": 5,
+      "name": "Aswan",
+      "image": "/images/aswan.jpg",
+      "checkIn": "2026-10-01",
+      "checkOut": "2026-10-07",
+      "nights": 6,
+      "hotelId": 501,
+      "hotelName": "Aswan Nile View Hotel",
+      "hotelStars": 4,
+      "pricePerNight": 55,
+      "transport": {
+        "company": "GoBus",
+        "departure": "21:00",
+        "arrival": "09:00",
+        "price": 18
+      },
+      "total": 348,
+      "userId": "FT79WBL08G4",
+      "createdAt": "2026-09-01T20:36:02.891Z",
+      "id": "bJc_9ZrkmAk"
+    },
+    {
+      "destinationId": 7,
+      "name": "Alexandria",
+      "image": "https://images.unsplash.com/photo-1633624646814-3a61ed3e2847?auto=format&fit=crop&w=1200&q=80",
+      "checkIn": "2026-09-01",
+      "checkOut": "2026-09-02",
+      "nights": 1,
+      "hotelId": 701,
+      "hotelName": "Corniche Sea View Hotel",
+      "hotelStars": 4,
+      "pricePerNight": 50,
+      "transport": {
+        "company": "West Delta Bus",
+        "departure": "09:00",
+        "arrival": "12:00",
+        "price": 6
+      },
+      "total": 56,
+      "userId": "FT79WBL08G4",
+      "createdAt": "2026-09-01T21:13:12.473Z",
+      "id": "ytV9BPMi5-g"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
