@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { destinations } from "../data/destinations";
 import "./TripPlanner.css";
+import PageAnimation from "../components/PageAnimation";
 
 const activityPool = {
   Beach: ["Relax and swim at the beach", "Sunset boat ride", "Beachside dinner"],
@@ -197,9 +198,14 @@ const deleteSavedPlan = (id) => {
 };
 
   return (
+    <PageAnimation>
+
     <div className="trip-page">
       <div className="trip-container">
         <div className="trip-content">
+          <span className="page-badge">
+            <span className="dot"></span> Trip Planner <span className="dot"></span>
+          </span>
           <h1>Plan Your Perfect Trip</h1>
           <p>Create your personalized adventure in Egypt</p>
 
@@ -320,5 +326,7 @@ const deleteSavedPlan = (id) => {
         </div>
       </div>
     </div>
+    </PageAnimation>
+
   );
 }

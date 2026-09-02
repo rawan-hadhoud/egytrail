@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useBooking } from "../context/BookingContext";
 import { useAuth } from "../context/AuthContext";
 import "./MyBookings.css";
+import PageAnimation from "../components/PageAnimation";
 
 function formatDate(dateStr) {
   if (!dateStr) return "";
@@ -22,7 +23,7 @@ export default function MyBookings() {
         <h1>My Bookings</h1>
         <div className="empty-bookings">
           <p>Log in to see and manage your bookings.</p>
-          <Link to="/login" className="browse-btn">
+          <Link to="/login" className="browse-btn" viewtransition>
             Login →
           </Link>
         </div>
@@ -45,7 +46,7 @@ export default function MyBookings() {
         <h1>My Bookings</h1>
         <div className="empty-bookings">
           <p>You don't have any bookings yet.</p>
-          <Link to="/destinations" className="browse-btn">
+          <Link to="/destinations" className="browse-btn" viewtransition>
             Browse Destinations →
           </Link>
         </div>
@@ -56,6 +57,8 @@ export default function MyBookings() {
   const grandTotal = bookings.reduce((sum, b) => sum + b.total, 0);
 
   return (
+    <PageAnimation>
+
     <div className="my-bookings-page">
       <h1>My Bookings</h1>
       <p>
@@ -107,5 +110,6 @@ export default function MyBookings() {
         ))}
       </div>
     </div>
+    </PageAnimation>
   );
 }

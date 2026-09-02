@@ -121,6 +121,23 @@
       "userId": "FT79WBL08G4",
       "createdAt": "2026-09-01T21:13:12.473Z",
       "id": "ytV9BPMi5-g"
+    },
+    {
+      "destinationId": 6,
+      "name": "Cairo",
+      "image": "https://images.unsplash.com/photo-1525564074637-fd7acf77b762?auto=format&fit=crop&w=1200&q=80",
+      "checkIn": "2026-09-02",
+      "checkOut": "2026-09-09",
+      "nights": 7,
+      "hotelId": 601,
+      "hotelName": "Giza Pyramids View Hotel",
+      "hotelStars": 5,
+      "pricePerNight": 60,
+      "transport": null,
+      "total": 420,
+      "userId": "FT79WBL08G4",
+      "createdAt": "2026-09-02T13:17:42.832Z",
+      "id": "8g8ajn2mqKA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
 
 :root {
-  /* Ink (text) */
-  --ink: #10243B;
-  --ink-soft: #55697A;
+  /* Text */
+  --text: #f5f1ea;
+  --text-soft: #a9a29a;
+  --text-faint: #77706e;
 
-  /* Teal (single source of truth — stop scattering variants) */
-  --teal: #16A39A;
-  --teal-deep: #0C7A72;
-  --teal-tint: #EAF5F3;
+  /* Gold accent (single source of truth) */
+  --gold: #cda06a;
+  --gold-light: #dbb27e;
+  --gold-tint: rgba(205, 160, 106, 0.12);
 
   /* Surfaces */
-  --surface: #FFFFFF;
-  --surface-alt: #F2F5F4;
-  --line: #E3E8E6;
+  --bg: #0b0a09;
+  --surface: #141210;
+  --surface-alt: #171410;
+  --line: rgba(255, 255, 255, 0.08);
 
   /* Radius scale */
   --radius-s: 12px;
@@ -21,36 +23,113 @@
   --radius-l: 28px;
 
   /* Shadow scale — used sparingly, mostly on hover */
-  --shadow-soft: 0 10px 30px rgba(16, 36, 59, 0.06);
-  --shadow-hover: 0 18px 40px rgba(16, 36, 59, 0.12);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-hover: 0 20px 45px rgba(0, 0, 0, 0.45);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Inter', sans-serif;
-  background: var(--surface);
-  color: var(--ink-soft);
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text-soft);
   line-height: 1.6;
 }
 
-h1, h2, h3{
-  font-family: 'Poppins', sans-serif;
-  color: var(--ink);
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  color: var(--text);
   line-height: 1.15;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-button{
+button {
   font-family: inherit;
   cursor: pointer;
+}
+
+/* Shared "eyebrow" badge used on page headers site-wide, matching the Home hero badge */
+.page-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.page-badge .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: inline-block;
+}
+/* Smooth global interactions */
+a,
+button,
+input,
+select,
+textarea {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px var(--gold-tint);
+}
+
+/* Smooth hover-lift on any card-like element */
+.destination-card,
+.vibe-card,
+.why-card,
+.booking-card,
+.saved-plan-card,
+.popular-card {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.35s ease, box-shadow 0.35s ease;
+}
+/* Page transition animation */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.35s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::view-transition-old(root) {
+  animation-name: page-fade-out;
+}
+
+::view-transition-new(root) {
+  animation-name: page-fade-in;
+}
+
+@keyframes page-fade-out {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-10px); }
+}
+
+@keyframes page-fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }

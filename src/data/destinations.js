@@ -9,7 +9,8 @@ export const destinations = [
     price: 45,
     tags: ["Beach", "Diving", "Adventure"],
     description:
-      "A peaceful coastal destination famous for diving, clear water and unforgettable adventures."
+      "A peaceful coastal destination famous for diving, clear water and unforgettable adventures.",
+    featured: true
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ export const destinations = [
     price: 60,
     tags: ["History", "Culture", "Museums"],
     description:
-      "Explore ancient temples, historical monuments and the heart of ancient Egyptian civilization."
+      "Explore ancient temples, historical monuments and the heart of ancient Egyptian civilization.",
+    featured: true
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ export const destinations = [
     price: 55,
     tags: ["Desert", "Nature", "Relaxation"],
     description:
-      "Discover a unique oasis surrounded by desert landscapes, palm trees and natural springs."
+      "Discover a unique oasis surrounded by desert landscapes, palm trees and natural springs.",
+    featured: true
   },
   {
     id: 4,
@@ -45,7 +48,8 @@ export const destinations = [
     price: 70,
     tags: ["Beach", "Resort", "Snorkeling"],
     description:
-      "Enjoy the Red Sea, beautiful beaches and some of Egypt's best snorkeling experiences."
+      "Enjoy the Red Sea, beautiful beaches and some of Egypt's best snorkeling experiences.",
+    featured: true
   },
   {
     id: 5,
@@ -57,7 +61,8 @@ export const destinations = [
     price: 50,
     tags: ["Nile", "Culture", "History"],
     description:
-      "Experience the beauty of the Nile, traditional Nubian culture and peaceful river adventures."
+      "Experience the beauty of the Nile, traditional Nubian culture and peaceful river adventures.",
+    featured: true
   },
   {
     id: 6,
@@ -70,7 +75,8 @@ export const destinations = [
     price: 40,
     tags: ["History", "Culture", "Museums"],
     description:
-      "Egypt's vibrant capital, home to the Great Pyramids of Giza, the Egyptian Museum and centuries of history."
+      "Egypt's vibrant capital, home to the Great Pyramids of Giza, the Egyptian Museum and centuries of history.",
+    featured: true
   },
   {
     id: 7,
@@ -83,7 +89,8 @@ export const destinations = [
     price: 45,
     tags: ["Culture", "History", "Relaxation"],
     description:
-      "A charming Mediterranean city known for the Qaitbay Citadel, the Corniche and its blend of ancient and modern culture."
+      "A charming Mediterranean city known for the Qaitbay Citadel, the Corniche and its blend of ancient and modern culture.",
+    featured: true
   },
   {
     id: 8,
@@ -96,6 +103,48 @@ export const destinations = [
     price: 65,
     tags: ["Beach", "Diving", "Resort"],
     description:
-      "A lively Red Sea resort town famous for diving, water sports and all-year sunshine."
+      "A lively Red Sea resort town famous for diving, water sports and all-year sunshine.",
+    featured: true
+  },
+
+  /* ===== New — Explore-only, not shown in Home "Popular Destinations" ===== */
+  {
+    id: 9,
+    name: "Makadi Bay",
+    governorate: "Red Sea",
+    category: "Beach",
+    image: "/images/makadi.jpg",
+    rating: 4.6,
+    price: 60,
+    tags: ["Beach", "Resort", "Diving"],
+    description:
+      "A tranquil Red Sea resort town south of Hurghada, known for its calm turquoise bay, coral reefs and luxury beach resorts.",
+    featured: false
+  },
+  {
+    id: 10,
+    name: "Red Sea Riviera",
+    governorate: "Red Sea",
+    category: "Beach",
+    image: "/images/redsea-riviera.jpg",
+    rating: 4.7,
+    price: 75,
+    tags: ["Beach", "Diving", "Resort"],
+    description:
+      "A stretch of stunning coastline along Egypt's eastern coast, home to world-class diving spots, coral reefs and luxury resort towns.",
+    featured: false
+  },
+    {
+    id: 11,
+    name: "Marsa Alam",
+    governorate: "Red Sea",
+    category: "Beach",
+    image: "/images/marsa-alam.jpg",
+    rating: 4.8,
+    price: 65,
+    tags: ["Beach", "Diving", "Nature"],
+    description:
+      "A remote Red Sea gem known for pristine coral reefs, dolphin encounters and untouched desert beaches, away from the crowds.",
+    featured: false
   }
 ];

@@ -1,16 +1,57 @@
-# React + Vite
+# EgyTrail 🏺
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+منصة استكشاف وتخطيط رحلات سياحية داخل مصر — تصفح وجهات، خطط رحلتك، احجز، واحفظ أماكنك المفضلة.
 
-Currently, two official plugins are available:
+## المميزات
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🗺️ **Explore** — تصفح وجهات مصر مع فلترة بالكاتيجوري والبحث والترتيب حسب السعر أو التقييم.
+- ✨ **Trip Planner** — بناء خطة رحلة يوم بيوم أوتوماتيكيًا حسب الوجهة، المدة، والستايل.
+- ❤️ **Favorites** — حفظ الأماكن المفضلة (بتتخزن في المتصفح، بتفضل موجودة حتى بعد قفل الصفحة).
+- 🔐 **Login / Register** — تسجيل دخول وإنشاء حساب.
+- 🧳 **My Bookings** — عرض وإدارة الحجوزات الخاصة بالمستخدم بعد تسجيل الدخول.
 
-## React Compiler
+## التقنيات المستخدمة
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** + **Vite**
+- **React Router v7** (routing)
+- **Framer Motion** (page transitions)
+- **Axios** (API requests)
+- **JSON Server** (باك إند وهمي محلي للتطوير — مستخدم بدل سيرفر حقيقي)
 
-## Expanding the Oxlint configuration
+## طريقة التشغيل
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. تثبيت الباكدجات:
+```bash
+   npm install
+```
+
+2. تشغيل الباك إند الوهمي (JSON Server) — لازم يفضل شغال في تيرمنال منفصل:
+```bash
+   npm run server
+```
+   هيشتغل على `http://localhost:3000`.
+
+3. في تيرمنال تاني، شغّل الفرونت إند:
+```bash
+   npm run dev
+```
+
+⚠️ لازم الاتنين (`server` و `dev`) شغالين مع بعض، وإلا حاجات زي تسجيل الدخول والحجوزات مش هتشتغل.
+
+## بناء نسخة الإنتاج
+
+```bash
+npm run build
+npm run preview
+```
+
+## هيكل المشروع
+
+```
+src/
+├── components/     # مكونات مشتركة (Navbar, Footer, Cards...)
+├── context/        # Auth, Bookings, Favorites
+├── data/           # بيانات الوجهات، الفنادق، الباصات
+├── pages/          # صفحات الموقع (Home, Explore, Trip Planner...)
+└── api/            # إعدادات Axios
+```

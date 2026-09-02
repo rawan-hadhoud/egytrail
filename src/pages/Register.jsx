@@ -2,6 +2,7 @@ import { useState } from "react";
 import api from "../api/axios";
 import { useNavigate } from "react-router-dom";
 import "./Auth.css";
+import PageAnimation from "../components/PageAnimation";
 
 
 export default function Register(){
@@ -81,7 +82,7 @@ alert("Account created successfully");
 
 // go login page
 
-navigate("/login");
+navigate("/login"), {state:{viewtransition:true}};
 
 
 
@@ -104,6 +105,8 @@ console.log(error);
 
 
 return(
+
+    <PageAnimation>
 
 
 <div className="auth-page">
@@ -229,6 +232,7 @@ onClick={()=>navigate("/login")}
 
 </div>
 
+</PageAnimation>
 
 )
 

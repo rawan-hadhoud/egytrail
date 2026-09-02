@@ -1,48 +1,55 @@
-.cta{
+.cta {
   margin: 90px 8%;
   height: 380px;
   border-radius: var(--radius-l);
-  background-image:
-  linear-gradient(rgba(16,36,59,.55), rgba(16,36,59,.55)),
-  url("/images/cta.jpg");
+  background-image: linear-gradient(
+      rgba(11, 10, 9, 0.55),
+      rgba(11, 10, 9, 0.75)
+    ),
+    url("/images/cta.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.cta-overlay{
-  color: white;
+.cta-overlay {
+  color: var(--text);
   max-width: 560px;
   padding: 0 20px;
 }
 
-.cta h2{
+.cta h2 {
+  font-family: "Playfair Display", serif;
   font-size: clamp(28px, 4vw, 40px);
-  color: white;
+  color: var(--text);
   margin-bottom: 16px;
 }
 
-.cta p{
+.cta p {
   font-size: 17px;
-  color: rgba(255,255,255,.85);
+  color: rgba(245, 241, 234, 0.8);
   margin-bottom: 28px;
 }
 
-.cta button{
-  background: var(--teal);
-  color: white;
-  border: none;
-  padding: 15px 40px;
-  border-radius: var(--radius-s);
-  font-size: 16px;
-  font-weight: 600;
-  transition: .25s;
+.cta-btn{
+display:inline-block;
+background:#cda06a;
+color:#151310;
+border:none;
+padding:16px 45px;
+border-radius:999px;
+font-size:16px;
+font-weight:700;
+text-decoration:none;
+cursor:pointer;
+transition:.3s;
 }
 
-.cta button:hover{
-  background: var(--teal-deep);
-  transform: translateY(-2px);
+.cta-btn:hover{
+background:#dbb27e;
+transform:translateY(-5px);
 }

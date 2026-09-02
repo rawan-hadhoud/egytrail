@@ -7,6 +7,8 @@ import DestinationDetails from "./pages/DestinationDetails";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MyBookings from "./pages/MyBookings";
+import Favorites from "./pages/Favorites";
+import NotFound from "./pages/NotFound";
 
 function App(){
 const router = createBrowserRouter([
@@ -19,7 +21,9 @@ const router = createBrowserRouter([
       {path:"trip-planner",element:<TripPlanner />},
       {path:"login",element:<Login/>},
       {path:"register",element:<Register/>},
-      {path:"my-bookings",element:<MyBookings />}
+      {path:"my-bookings",element:<MyBookings />},
+      {path:"favorites",element:<Favorites />},
+       {path:"*",element:<NotFound />}
     ]
   }
 ])

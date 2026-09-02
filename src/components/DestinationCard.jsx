@@ -1,25 +1,33 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useFavorites } from "../context/FavoritesContext";
 import "./DestinationCard.css";
 
+const badgeClass = {
+  Beach: "badge-beach",
+  History: "badge-history",
+  Nature: "badge-nature",
+  Culture: "badge-culture",
+};
+
 export default function DestinationCard({ destination }) {
-  const [favorite, setFavorite] = useState(false);
+  const { isFavorite, toggleFavorite } = useFavorites();
+  const favorite = isFavorite(destination.id);
 
   return (
     <div className="destination-card">
       <div className="card-image">
         <img src={destination.image} alt={destination.name} />
 
-        <div className="rating-badge">
-          ⭐ {destination.rating}
-        </div>
+        <span className={`badge ${badgeClass[destination.category] || ""}`}>
+          {destination.category}
+        </span>
 
         <button
           className={`favorite ${favorite ? "is-active" : ""}`}
           aria-label="Add to favorites"
           onClick={(e) => {
             e.preventDefault();
-            setFavorite((prev) => !prev);
+            toggleFavorite(destination);
           }}
         >
           {favorite ? "❤" : "♡"}
@@ -27,18 +35,23 @@ export default function DestinationCard({ destination }) {
       </div>
 
       <div className="card-content">
-        <span className="location">📍 {destination.governorate}</span>
-
-        <h2>{destination.name}</h2>
-
-        <div className="card-info">
-          <span>{destination.category}</span>
-          <span className="price-tag">${destination.price} / night</span>
+        <div className="title-row">
+          <h3>{destination.name}</h3>
+          <span className="rating">
+            <span className="star">★</span> {destination.rating}
+          </span>
         </div>
 
-        <Link to={`/destinations/${destination.id}`} className="details-btn">
-          View Details →
-        </Link>
+        <p className="location">{destination.governorate}</p>
+
+        <div className="info-row">
+          <span className="price">
+            <strong>${destination.price}</strong> / night
+          </span>
+          <Link to={`/destinations/${destination.id}`} className="details-btn">
+            View Details →
+          </Link>
+        </div>
       </div>
     </div>
   );

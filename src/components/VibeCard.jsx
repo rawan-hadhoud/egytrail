@@ -1,23 +1,15 @@
 import "./VibeCard.css";
-export default function VibeCard({vibe}){
 
-return(
+export default function VibeCard({ destination }) {
+  return (
     <div className="vibe-card">
+      <img src={destination.image} alt={destination.name} />
 
-        <img 
-        src={vibe.image}
-        alt={vibe.title}
-        />
-
-        <div className="vibe-overlay">
-
-            <h3>{vibe.title}</h3>
-
-            <p>{vibe.description}</p>
-
-        </div>
-
+      <div className="vibe-overlay">
+        <span className="vibe-line"></span>
+        <h3>{destination.name}</h3>
+        <p>{destination.governorate} · {destination.category}</p>
+      </div>
     </div>
-)
-
+  );
 }

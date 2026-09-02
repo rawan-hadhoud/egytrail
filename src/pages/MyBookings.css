@@ -1,100 +1,123 @@
-.my-bookings-page{
+.my-bookings-page {
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 150px 20px 100px;
+  min-height: 100vh;
+  background: var(--bg);
 }
 
-.my-bookings-page h1{
-  margin-bottom: 4px;
+.my-bookings-page h1 {
+  margin-bottom: 6px;
+  font-size: clamp(32px, 4vw, 44px);
+  color: var(--text);
 }
 
-.empty-bookings{
-  margin-top: 40px;
+.my-bookings-page > p {
+  color: var(--text-soft);
+}
+
+.empty-bookings {
+  margin-top: 60px;
   text-align: center;
-  color: #64748b;
+  color: var(--text-soft);
 }
 
-.browse-btn{
+.browse-btn {
   display: inline-block;
-  margin-top: 16px;
-  background: #0d9488;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
+  margin-top: 18px;
+  background: var(--gold);
+  color: #151310;
+  padding: 12px 26px;
+  border-radius: 999px;
   font-weight: 700;
+  transition: 0.25s;
 }
 
-.bookings-list{
+.browse-btn:hover {
+  background: var(--gold-light);
+}
+
+.bookings-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 30px;
 }
 
-.booking-card{
+.booking-card {
   display: flex;
   align-items: center;
-  gap: 16px;
-  background: #f8fafc;
-  border-radius: 12px;
-  padding: 16px;
+  gap: 18px;
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-m);
+  padding: 18px;
+  transition: 0.25s;
 }
 
-.booking-card img{
+.booking-card:hover {
+  border-color: rgba(205, 160, 106, 0.3);
+}
+
+.booking-card img {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: var(--radius-s);
 }
 
-.booking-info{
+.booking-info {
   flex: 1;
 }
 
-.booking-info h2{
-  margin: 0 0 4px;
+.booking-info h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: var(--text);
 }
 
-.booking-dates{
-  color: #486581;
+.booking-dates {
+  color: var(--text-soft);
   font-weight: 600;
   margin: 2px 0;
 }
 
-.booking-dates{
-  color: #486581;
+.booking-hotel {
+  color: var(--text);
   font-weight: 600;
   margin: 2px 0;
 }
 
-.booking-hotel{
-  color: #102a43;
-  font-weight: 600;
-  margin: 2px 0;
-}
-
-.booking-transport{
-  color: #64748b;
+.booking-transport {
+  color: var(--text-soft);
   font-size: 14px;
   margin: 2px 0;
 }
 
-.booking-total{
-  font-weight: 700;
-  color: #0d9488;
+.booking-info > p {
+  color: var(--text-soft);
+  font-size: 14px;
+  margin: 2px 0;
 }
 
-.cancel-btn{
-  background: #fee2e2;
-  color: #dc2626;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
+.booking-total {
+  font-weight: 700;
+  color: var(--gold);
+  margin-top: 6px !important;
+}
+
+.cancel-btn {
+  background: rgba(224, 102, 95, 0.12);
+  color: #e0665f;
+  border: 1px solid rgba(224, 102, 95, 0.3);
+  padding: 10px 20px;
+  border-radius: 999px;
   font-weight: 600;
   cursor: pointer;
+  transition: 0.25s;
 }
 
-.cancel-btn:hover{
-  background: #fecaca;
+.cancel-btn:hover {
+  background: #e0665f;
+  color: #151310;
 }

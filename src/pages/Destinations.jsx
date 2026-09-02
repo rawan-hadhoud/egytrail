@@ -2,6 +2,7 @@ import { useState } from "react";
 import { destinations } from "../data/destinations";
 import DestinationCard from "../components/DestinationCard";
 import "./Destinations.css";
+import PageAnimation from "../components/PageAnimation";
 
 const categories = ["All", "Beach", "History", "Nature", "Desert", "Culture"];
 const categoryIcons = {
@@ -35,9 +36,16 @@ export default function Destinations() {
     });
 
   return (
+    <PageAnimation>
+
     <div className="explore-page">
-      <h1>Explore Egypt</h1>
-      <p>Discover amazing places and unforgettable experiences</p>
+      <div className="explore-header">
+        <span className="page-badge">
+          <span className="dot"></span> Full Collection <span className="dot"></span>
+        </span>
+        <h1>Explore Egypt</h1>
+        <p>Discover amazing places and unforgettable experiences</p>
+      </div>
 
       <div className="filters">
         <input
@@ -82,5 +90,6 @@ export default function Destinations() {
         )}
       </div>
     </div>
+    </PageAnimation>
   );
 }

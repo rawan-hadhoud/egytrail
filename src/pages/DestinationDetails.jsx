@@ -6,6 +6,7 @@ import { getBusByDestination } from "../data/buses";
 import { useBooking } from "../context/BookingContext";
 import { useAuth } from "../context/AuthContext";
 import "./DestinationDetails.css";
+import PageAnimation from "../components/PageAnimation";
 
 function addDays(dateStr, days) {
   const date = new Date(dateStr);
@@ -62,7 +63,7 @@ export default function DestinationDetails() {
 
   const handleBook = async () => {
     if (!user) {
-      navigate("/login", { state: { from: `/destinations/${destination.id}` } });
+      navigate("/login", { state: { from: `/destinations/${destination.id}`, viewtransition: true } });
       return;
     }
 
@@ -96,6 +97,8 @@ export default function DestinationDetails() {
   };
 
   return (
+    <PageAnimation>
+
     <div className="details-page">
       {/* HERO */}
       <section className="details-hero">
@@ -228,7 +231,7 @@ export default function DestinationDetails() {
           {!user && (
             <p className="login-hint">
               You need to{" "}
-              <Link to="/login" state={{ from: `/destinations/${destination.id}` }}>
+              <Link to="/login" state={{ from: `/destinations/${destination.id}`, viewtransition: true }}>
                 log in
               </Link>{" "}
               to book this trip.
@@ -244,7 +247,7 @@ export default function DestinationDetails() {
               {submitting ? "Booking..." : booked ? "Booked ✓" : "Book Now"}
             </button>
 
-            <Link to="/trip-planner" className="plan-btn">
+            <Link to="/trip-planner" className="plan-btn" viewtransition>
               Plan Your Trip →
             </Link>
           </div>
@@ -259,5 +262,6 @@ export default function DestinationDetails() {
         </div>
       </section>
     </div>
+    </PageAnimation>
   );
 }
