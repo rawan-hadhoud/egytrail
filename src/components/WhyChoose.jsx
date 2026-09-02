@@ -31,7 +31,7 @@ export default function WhyChoose() {
   return (
     <section className="why-section">
       <span className="why-badge">Our Promise</span>
-      <h2>Why choose MasrGo</h2>
+      <h2>Why choose EgyTrail</h2>
       <p className="why-subtitle">Travel smarter, explore better.</p>
 
       <div className="why-grid">

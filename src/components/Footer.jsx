@@ -16,7 +16,7 @@ alt="EgyTrail"
           <p>Explore Egypt. Create unforgettable memories.</p>
 
           <div className="footer-contact">
-            <p>info@masrgo.com</p>
+            <p>info@egytrail.com</p>
             <p>+20 100 000 000</p>
             <p>Egypt</p>
           </div>
@@ -40,7 +40,7 @@ alt="EgyTrail"
       </div>
 
       <div className="footer-bottom">
-        <span>© 2026 MasrGo. All rights reserved.</span>
+        <span>© 2026 EgyTrail. All rights reserved.</span>
         <div className="footer-legal">
           <a>Privacy</a>
           <a>Terms</a>
