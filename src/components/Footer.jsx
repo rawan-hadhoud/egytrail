@@ -6,13 +6,11 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-brand">
                 <div className="logo">
-
-<img 
-src="/images/logo.png"
-alt="EgyTrail"
-/>
-
-</div>
+                  <img 
+                  src="/images/logo.png"
+                  alt="EgyTrail"
+                  />
+                </div>
           <p>Explore Egypt. Create unforgettable memories.</p>
 
           <div className="footer-contact">

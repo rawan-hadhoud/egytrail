@@ -6,7 +6,7 @@ import { AuthProvider } from './context/AuthContext.jsx'
 import { BookingProvider } from './context/BookingContext.jsx'
 import { FavoritesProvider } from './context/FavoritesContext.jsx'
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')).render(  // arsm el app klo gwa el root div rly fe index.html
   <StrictMode>
 
     <AuthProvider>

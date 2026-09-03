@@ -6,7 +6,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
-  const { bookings } = useBooking();
+  const { bookings } = useBooking(); 
   const { favorites } = useFavorites();
 
   return (
@@ -32,7 +32,7 @@ alt="EgyTrail"
         </NavLink>
         <NavLink to="/my-bookings" className="bookings-link" viewtransition>
           My Bookings
-          {bookings.length > 0 && (
+          {bookings.length > 0 && ( //y3rf el badge lw fe bookings
             <span className="bookings-badge">{bookings.length}</span>
           )}
         </NavLink>
@@ -41,12 +41,12 @@ alt="EgyTrail"
       <div className="nav-actions">
         <NavLink to="/favorites" className="favorites-link" aria-label="Favorites">
           ♡
-          {favorites.length > 0 && (
+          {favorites.length > 0 && (  //y3rf el badge lw fe favorites
             <span className="favorites-badge">{favorites.length}</span>
           )}
         </NavLink>
 
-        {user ? (
+        {user ? ( // y3rf lw el user logged in aw la2
           <>
             <span className="user-name">Hi, {user.name} 👋</span>
             <button className="logout-btn" onClick={logout}>

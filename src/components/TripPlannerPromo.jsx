@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./TripPlannerPromo.css";
 
-export default function TripPlannerPromo() {
+export default function TripPlannerPromo() { 
   const steps = [
     { icon: "🗺", text: "Choose your destinations" },
     { icon: "📅", text: "Pick your dates & travel style" },
@@ -21,11 +21,11 @@ export default function TripPlannerPromo() {
           you spend less time planning and more time exploring.
         </p>
 
-        <ul className="trip-promo-steps">
-          {steps.map((step, i) => (
+        <ul className="trip-promo-steps"> 
+          {steps.map((step, i) => ( 
             <li key={i}>
-              <span className="step-icon">{step.icon}</span>
-              {step.text}
+              <span className="step-icon">{step.icon}</span> 
+              {step.text} 
             </li>
           ))}
         </ul>
