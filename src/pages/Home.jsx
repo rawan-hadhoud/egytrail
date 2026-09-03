@@ -2,7 +2,7 @@ import "./Home.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { destinations } from "../data/destinations";
-
+import { Link } from "react-router-dom";
 import VibeCard from "../components/VibeCard";
 import DestinationCard from "../components/DestinationCard";
 import TripPlannerPromo from "../components/TripPlannerPromo";
@@ -113,7 +113,7 @@ error &&
       <section className="popular-section">
         <div className="popular-header">
           <h2>Popular Destinations</h2>
-          <a className="view-all" href="/destinations">View All →</a>
+          <Link className="view-all" to="/destinations">View All →</Link>
         </div>
 
         <div className="destinations-grid">
