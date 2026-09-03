@@ -9,7 +9,7 @@ export function BookingProvider({ children }) {
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // Whenever the logged-in user changes, load their bookings from the server.
+  
   useEffect(() => {
     if (!user) {
       setBookings([]);
@@ -25,7 +25,7 @@ export function BookingProvider({ children }) {
       .finally(() => setLoading(false));
   }, [user]);
 
-  // Returns { success: boolean, reason?: "no-user" }
+
   const addBooking = async (booking) => {
     if (!user) {
       return { success: false, reason: "no-user" };

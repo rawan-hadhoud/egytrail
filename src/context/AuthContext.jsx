@@ -3,11 +3,11 @@ import { createContext, useContext, useState } from "react";
 const AuthContext = createContext();
 
 
-export function AuthProvider({children}){ // el children hwa el components el gayin mn el app.jsx
+export function AuthProvider({children}){ 
 
 
-const [user,setUser]=useState( // el user hwa el object el gay mn el login
-JSON.parse(localStorage.getItem("user")) || null // lw fe user mwgood fe el localStorage y3mlha parse w y7otha fe el state lw la2 y7otha null
+const [user,setUser]=useState( 
+JSON.parse(localStorage.getItem("user")) || null 
 );
 
 

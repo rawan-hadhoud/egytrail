@@ -1,5 +1,3 @@
-// One bus/transport option per destination from Cairo (the common hub).
-// Cairo itself has no bus option since it's the starting point.
 export const buses = [
   { id: 1, destinationId: 1, company: "GoBus", from: "Cairo", departure: "23:00", arrival: "07:00", price: 12 },
   { id: 2, destinationId: 2, company: "GoBus", from: "Cairo", departure: "22:00", arrival: "08:00", price: 15 },

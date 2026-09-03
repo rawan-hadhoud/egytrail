@@ -84,13 +84,11 @@ const user = res.data[0];
 
 
 
-// save user in context + localStorage
 
 login(user);
 
 
 
-// go back to where the user came from (ex: a destination they wanted to book)
 
 const redirectTo = location.state?.from || "/";
 
